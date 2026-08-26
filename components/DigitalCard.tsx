@@ -108,7 +108,7 @@ export default function DigitalCard() {
           </a>
 
           <a
-            href="mailto:contact@espaciodelengua.com"
+            href="mailto:okoum2018@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
