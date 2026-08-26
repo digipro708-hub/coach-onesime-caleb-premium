@@ -1,4 +1,3 @@
-import Image from "next/image";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar() {
@@ -13,18 +12,7 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="navbar-container">
-
-        {/* Logo + Nom */}
-        <div className="navbar-logo">
-          <Image
-            src="/Logo.png"
-            alt="Logo Académie Espacio de Lengua"
-            width={52}
-            height={52}
-            priority
-          />
-
-          <div className="navbar-logo">ESPACIO DE LENGUA</div>
+        <div className="navbar-logo">ESPACIO DE LENGUA</div>
 
         <div className="navbar-right">
           <nav className="navbar-links">
