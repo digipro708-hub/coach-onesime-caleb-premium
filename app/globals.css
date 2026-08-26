@@ -2936,7 +2936,7 @@ img{
     width: 72px;
     height: 72px;
 
-    top: 68px;      /* ← remonte le logo */
+    top: 38px;      /* ← remonte le logo */
     left: 18px;
 
     z-index: 30;
