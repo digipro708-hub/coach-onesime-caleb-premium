@@ -602,18 +602,6 @@ html{
   padding:12px 16px;
 }
 
-.navbar-logo{
-  display:none;
-}
-
-.navbar-links{
-  width:100%;
-  justify-content:space-between;
-}
-
-.navbar-links a{
-  font-size:.72rem;
-}
 
 }/*=========================================
  HERO LUXE — ESPACIO DE LENGUA
@@ -1142,23 +1130,9 @@ html{
 
 .language-switcher button:hover{
   background:rgba(236,179,79,.15);
-}.navbar-container{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
 }
 
-.navbar-right{
-  display:flex;
-  align-items:center;
-  gap:20px;
-}
-
-.navbar-links{
-  display:flex;
-  align-items:center;
-  gap:24px;
-}/* ==========================================
+/* ==========================================
    HERO PREMIUM
 ========================================== */
 
@@ -1608,22 +1582,43 @@ html{
   font-size:14px;
 }
 
-@media(max-width:900px){
+@media (max-width: 900px){
 
-  .about-container{
-    grid-template-columns:1fr;
-    text-align:center;
+  .desktop-links{
+    display:none !important;
   }
 
-  .about-card{
-    text-align:left;
+  .desktop-language{
+    display:block !important;
   }
 
-  .about-stats{
-    grid-template-columns:1fr;
+  .menu-button{
+    display:flex !important;
+    align-items:center;
+    justify-content:center;
   }
 
-}.digital-top{
+  .navbar-container{
+    padding:12px 16px;
+  }
+
+  .navbar-logo{
+    font-size:.72rem;
+    letter-spacing:1px;
+  }
+
+  .navbar-right{
+    gap:10px;
+  }
+
+  /* Le sélecteur FR/ES reste visible */
+  .language-switcher{
+    transform:scale(.88);
+    transform-origin:center;
+  }
+
+}
+.digital-top{
   display:flex;
   flex-direction:column;
   align-items:center;
