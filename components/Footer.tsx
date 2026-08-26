@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { Phone, Mail, Facebook, Music2 } from "lucide-react";
 import { useLanguage } from "./LanguageProvider";

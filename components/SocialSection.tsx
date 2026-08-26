@@ -1,3 +1,5 @@
+"use client";
+
 import { Facebook, ArrowUpRight, Play } from "lucide-react";
 import { useLanguage } from "./LanguageProvider";
 

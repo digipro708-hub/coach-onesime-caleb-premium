@@ -1,3 +1,5 @@
+"use client";
+
 import { Phone, Mail, MessageCircle } from "lucide-react";
 import { useLanguage } from "./LanguageProvider";
 
