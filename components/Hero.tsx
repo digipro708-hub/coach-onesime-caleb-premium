@@ -38,13 +38,15 @@ export default function Hero() {
       <div className="hero-content">
 
         {/* Logo */}
-        <Image
-  src="/Logo.png"
-  alt="Logo Académie Espacio de Lengua"
-  width={140}
-  height={140}
-  priority
-/>
+        <div className="hero-logo-container">
+  <Image
+    src="/Logo.png"
+    alt="Logo Académie Espacio de Lengua"
+    width={120}
+    height={120}
+    priority
+  />
+</div>
 
         {/* Photo */}
         <div className="hero-photo">
