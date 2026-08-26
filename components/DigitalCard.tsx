@@ -44,13 +44,16 @@ export default function DigitalCard() {
       <div className="digital-card">
         {/* Logo */}
         <div className="digital-top">
-          <Image
-            src="/Logo.png"
-            alt="Logo Académie Espacio de Lengua"
-            width={90}
-            height={90}
-            className="digital-logo"
-          />
+         <div className="digital-logo-circle">
+  <Image
+    src="/Logo.png"
+    alt="Logo Académie Espacio de Lengua"
+    width={90}
+    height={90}
+    className="digital-logo"
+    priority
+  />
+</div>
 
           <span className="digital-badge">
             ACADÉMIE ESPACIO DE LENGUA
