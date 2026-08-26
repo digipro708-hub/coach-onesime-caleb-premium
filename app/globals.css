@@ -2043,4 +2043,94 @@ html{
     gap: 12px;
     font-size: 14px;
   }
+}/* ===== NAVBAR PREMIUM RESPONSIVE ===== */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(10, 10, 10, 0.9);
+  backdrop-filter: blur(12px);
+  padding: 12px 24px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  color: #D4AF37;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 22px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.navbar-links a:hover {
+  color: #D4AF37;
+}
+
+/* Bouton hamburger caché sur PC */
+.menu-button {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Menu mobile */
+.mobile-menu {
+  display: none;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width:768px) {
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    background: #111111;
+    padding: 18px;
+    gap: 16px;
+    border-top: 1px solid rgba(212,175,55,.3);
+  }
+
+  .mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 0;
+  }
+
+  .mobile-menu a:hover {
+    color: #D4AF37;
+  }
 }
