@@ -12,6 +12,11 @@
   padding:0;
   box-sizing:border-box;
 }
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 body{
   font-family:Poppins,sans-serif;
@@ -2632,4 +2637,67 @@ html{
 
 .desktop-links a:hover::after {
   width: 100%;
+}/* ==========================================
+   CORRECTION RESPONSIVE MOBILE
+========================================== */
+
+html,
+body{
+  width:100%;
+  overflow-x:hidden;
+}
+
+@media (max-width:900px){
+
+  .desktop-links{
+    display:none !important;
+  }
+
+  .desktop-language{
+    display:block !important;
+  }
+
+  .menu-button{
+    display:flex !important;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .navbar{
+    width:96%;
+    left:50%;
+    transform:translateX(-50%);
+    top:10px;
+  }
+
+  .navbar-container{
+    width:100%;
+    padding:10px 14px;
+    gap:10px;
+  }
+
+  .navbar-logo{
+    font-size:.65rem;
+    letter-spacing:1px;
+    flex:1;
+    min-width:0;
+  }
+
+  .navbar-right{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    flex-shrink:0;
+  }
+
+  .language-switcher{
+    transform:scale(.78);
+    transform-origin:center;
+  }
+
+  .menu-button{
+    width:40px;
+    height:40px;
+    flex-shrink:0;
+  }
 }
