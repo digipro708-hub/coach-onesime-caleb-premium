@@ -39,12 +39,12 @@ export default function Hero() {
 
         {/* Logo */}
         <Image
-          src="/logo.png"
-          alt="Logo Académie Espacio de Lengua"
-          width={130}
-          height={130}
-          className="hero-logo"
-        />
+  src="/Logo.png"
+  alt="Logo Académie Espacio de Lengua"
+  width={140}
+  height={140}
+  priority
+/>
 
         {/* Photo */}
         <div className="hero-photo">
