@@ -8,7 +8,7 @@ export default function Footer() {
 
         <div className="footer-logo-wrapper">
           <Image
-            src="/logo.png"
+            src="/Logo.png"
             alt="Logo Académie Espacio de Lengua"
             width={90}
             height={90}

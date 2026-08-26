@@ -24,11 +24,7 @@ export default function Navbar() {
             priority
           />
 
-          <div className="navbar-logo-text">
-            <span>ACADÉMIE</span>
-            <strong>ESPACIO DE LENGUA</strong>
-          </div>
-        </div>
+          <div className="navbar-logo">ESPACIO DE LENGUA</div>
 
         <div className="navbar-right">
           <nav className="navbar-links">

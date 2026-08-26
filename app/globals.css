@@ -1943,4 +1943,48 @@ html{
   width: 120px;
   height: 120px;
   object-fit: contain;
+}/* ===== NAVBAR MOBILE ===== */
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: nowrap;
+}
+
+/* Version téléphone */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 14px;
+  }
+
+  .navbar-container {
+    align-items: center;
+  }
+
+  .navbar-logo {
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .navbar-links {
+    display: none; /* cache les liens sur téléphone */
+  }
+
+  .navbar-right {
+    margin-left: auto;
+  }
 }

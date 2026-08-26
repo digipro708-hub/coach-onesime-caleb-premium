@@ -45,7 +45,7 @@ export default function DigitalCard() {
         {/* Logo */}
         <div className="digital-top">
           <Image
-            src="/logo.png"
+            src="/Logo.png"
             alt="Logo Académie Espacio de Lengua"
             width={90}
             height={90}
