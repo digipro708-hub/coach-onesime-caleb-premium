@@ -579,10 +579,13 @@ html{
 }
 
 .navbar-logo{
+  display:flex;
+  align-items:center;
   color:#ECB34F;
   font-weight:700;
-  letter-spacing:2px;
-  font-size:.82rem;
+  letter-spacing:.12em;
+  font-size:14px;
+  white-space:nowrap;
 }
 
 .navbar-links{
@@ -2801,7 +2804,8 @@ section {
   .stat-card h3{
     font-size:30px;
   }
-}/* ===== TITRES RESPONSIVE MOBILE ===== */
+}
+/* ===== TITRES RESPONSIVE MOBILE ===== */
 @media (max-width: 900px) {
 
   h1,
@@ -2880,4 +2884,33 @@ img{
   max-width:100%;
   height:auto;
   display:block;
+}/* ===== CORRECTION LOGO NAVBAR MOBILE ===== */
+@media (max-width:900px){
+
+  .navbar-logo{
+    font-size:11px;
+    max-width:110px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+
+}/* ===== Logo Hero : correction mobile ===== */
+@media (max-width: 900px) {
+
+  .hero-navbar-logo {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 58px;
+    height: 58px;
+    padding: 4px;
+    z-index: 5;
+  }
+
+  .hero-navbar-logo img {
+    width: 100%;
+    height: 100%;
+  }
+
 }
