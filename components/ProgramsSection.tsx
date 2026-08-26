@@ -11,7 +11,7 @@ import {
 import { useLanguage } from "./LanguageProvider";
 
 const WHATSAPP =
-  "https://wa.me/22890112233?text=Bonjour%20Coach%20Onésime,%20je%20souhaite%20m'inscrire%20à%20une%20formation.";
+  "https://wa.me/2290167345084?text=Bonjour%20Coach%20Onésime,%20je%20souhaite%20m'inscrire%20à%20une%20formation.";
 
 export default function ProgramsSection() {
   const { lang } = useLanguage();

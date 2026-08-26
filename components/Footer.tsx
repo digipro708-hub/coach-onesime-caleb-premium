@@ -1,7 +1,10 @@
 import Image from "next/image";
 import { Phone, Mail, Facebook, Music2 } from "lucide-react";
+import { useLanguage } from "./LanguageProvider";
 
 export default function Footer() {
+  const { lang } = useLanguage();
+
   return (
     <footer className="footer">
       <div className="footer-card">
@@ -23,13 +26,16 @@ export default function Footer() {
         <h3>Ayihadji KOUMAGNON</h3>
 
         <p className="footer-academy">
-          Académie Espagnole • ESPACIO DE LENGUA
-        </p>
+  {lang === "fr"
+    ? "Académie Espacio de Lengua"
+    : "Academia Espacio de Lengua"}
+</p>
 
-        <blockquote>
-          « Une langue, mille possibilités. »
-        </blockquote>
-
+<blockquote>
+  {lang === "fr"
+    ? "Une langue, mille possibilités."
+    : "Un idioma, mil posibilidades."}
+</blockquote>
         <div className="footer-contact">
 
           <a href="tel:+2290144686974">

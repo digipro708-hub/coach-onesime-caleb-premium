@@ -3,10 +3,12 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { useLanguage } from "./LanguageProvider";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+ const { lang } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,16 +19,16 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const links = [
-    { name: "Accueil", href: "#hero" },
-    { name: "Académie", href: "#academy" },
-    { name: "Programmes", href: "#programs" },
-    { name: "À propos", href: "#about" },
-    { name: "Témoignages", href: "#testimonials" },
-    { name: "Contact", href: "#contact" },
-    { name: "Réseaux", href: "#social" },
-    { name: "Adresse", href: "#location" },
-  ];
+const links = [
+  { href: "#hero", label: lang === "fr" ? "Accueil" : "Inicio" },
+  { href: "#academy", label: lang === "fr" ? "Académie" : "Academia" },
+  { href: "#programs", label: lang === "fr" ? "Programmes" : "Programas" },
+  { href: "#about", label: lang === "fr" ? "À propos" : "Sobre mí" },
+  { href: "#testimonials", label: lang === "fr" ? "Témoignages" : "Testimonios" },
+  { href: "#contact", label: lang === "fr" ? "Contact" : "Contacto" },
+  { href: "#social", label: lang === "fr" ? "Communauté" : "Comunidad" },
+  { href: "#location", label: lang === "fr" ? "Adresse" : "Dirección" },
+];
 
   return (
     <>
@@ -39,8 +41,8 @@ export default function Navbar() {
 
           <nav className="navbar-links desktop-links">
             {links.map((link) => (
-              <a key={link.name} href={link.href}>
-                {link.name}
+              <a key={link.label} href={link.href}>
+                {link.label}
               </a>
             ))}
           </nav>
@@ -90,11 +92,11 @@ export default function Navbar() {
         <nav className="mobile-menu-links">
           {links.map((link) => (
             <a
-              key={link.name}
+              key={link.label}
               href={link.href}
               onClick={() => setOpen(false)}
             >
-              {link.name}
+              {link.label}
             </a>
           ))}
         </nav>

@@ -1,11 +1,14 @@
 import { MapPin } from "lucide-react";
+import { useLanguage } from "./LanguageProvider";
 
 export default function LocationSection() {
+  const { lang } = useLanguage();
+
   return (
     <section id="location" className="location-section">
       <div className="section-title">
-        <span>LOCALISATION</span>
-        <h2>Nous trouver</h2>
+        <span>{lang === "fr" ? "ADRESSE" : "DIRECCIÓN"}</span>
+       <h2>{lang === "fr" ? "Où nous trouver ?" : "¿Dónde encontrarnos?"}</h2>
       </div>
 
       <div className="location-card">

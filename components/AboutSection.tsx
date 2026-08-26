@@ -9,7 +9,7 @@ export default function AboutSection() {
 
   const text = {
     fr: {
-      badge: "À PROPOS DU COACH",
+      badge: "À PROPOS",
       title: "Pourquoi choisir le Coach Onésime Caleb ?",
 
       description:
@@ -38,7 +38,7 @@ export default function AboutSection() {
     },
 
     es: {
-      badge: "SOBRE EL COACH",
+      badge: "SOBRE MÍ",
       title: "¿Por qué elegir al Coach Onésime Caleb?",
 
       description:
