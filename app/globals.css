@@ -2801,4 +2801,83 @@ section {
   .stat-card h3{
     font-size:30px;
   }
+}/* ===== TITRES RESPONSIVE MOBILE ===== */
+@media (max-width: 900px) {
+
+  h1,
+  h2,
+  .section-title,
+  .academy-title,
+  .about-title {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(34px, 9vw, 46px);
+    line-height: 1.12;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  p {
+    overflow-wrap: break-word;
+  }
+}/* ===== STATS MOBILE ===== */
+@media (max-width:900px){
+
+  .about-stats,
+  .academy-stats{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:16px;
+    width:100%;
+  }
+
+  .stat-card{
+    width:100%;
+    min-width:0;
+    padding:24px 16px;
+    border-radius:24px;
+    text-align:center;
+  }
+
+  .stat-card h3{
+    font-size:34px;
+  }
+}/* ===== PROGRAMMES MOBILE ===== */
+@media (max-width:900px){
+
+  .programs-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .program-card{
+    width:100%;
+    min-width:0;
+    padding:22px;
+    border-radius:24px;
+  }
+
+  .program-card h3{
+    font-size:28px;
+    line-height:1.2;
+  }
+}/* ===== ANTI DÉBORDEMENT MOBILE ===== */
+html,
+body{
+  overflow-x:hidden;
+}
+
+section,
+div,
+main,
+header,
+footer{
+  max-width:100%;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
 }
