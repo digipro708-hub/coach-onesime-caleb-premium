@@ -38,7 +38,7 @@ export default function Hero() {
       <div className="hero-content">
 
         {/* Logo */}
-       <div className="logo-circle">
+       <div className="logo-circle hero-navbar-logo">
   <Image
     src="/Logo.png"
     alt="Logo Académie Espacio de Lengua"
