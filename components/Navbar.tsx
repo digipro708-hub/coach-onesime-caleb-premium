@@ -1,4 +1,6 @@
+import Image from "next/image";
 import LanguageSwitcher from "./LanguageSwitcher";
+
 export default function Navbar() {
   const links = [
     { name: "Accueil", href: "#hero" },
@@ -11,19 +13,34 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="navbar-container">
-        <div className="navbar-logo">ESPACIO DE LENGUA</div>
+
+        {/* Logo + Nom */}
+        <div className="navbar-logo">
+          <Image
+            src="/Logo.png"
+            alt="Logo Académie Espacio de Lengua"
+            width={52}
+            height={52}
+            priority
+          />
+
+          <div className="navbar-logo-text">
+            <span>ACADÉMIE</span>
+            <strong>ESPACIO DE LENGUA</strong>
+          </div>
+        </div>
 
         <div className="navbar-right">
-  <nav className="navbar-links">
-    {links.map((link) => (
-      <a key={link.name} href={link.href}>
-        {link.name}
-      </a>
-    ))}
-  </nav>
+          <nav className="navbar-links">
+            {links.map((link) => (
+              <a key={link.name} href={link.href}>
+                {link.name}
+              </a>
+            ))}
+          </nav>
 
-  <LanguageSwitcher />
-</div>
+          <LanguageSwitcher />
+        </div>
       </div>
     </header>
   );

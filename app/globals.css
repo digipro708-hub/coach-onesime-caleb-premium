@@ -1897,4 +1897,31 @@ html{
 .testimonial-author span{
   color:#ECB34F;
   font-size:.9rem;
+}.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-logo img {
+  border-radius: 12px;
+}
+
+.navbar-logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.navbar-logo-text span {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #b38a35;
+  font-weight: 700;
+}
+
+.navbar-logo-text strong {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 800;
 }
