@@ -1,0 +1,1 @@
+export const siteConfig={title:"Coach Onésime Caleb KOUMAGNON | Académie Espacio de Lengua",url:"https://coachonesimecaleb.vercel.app"};
