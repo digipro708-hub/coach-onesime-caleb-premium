@@ -102,7 +102,7 @@ export default function DigitalCard() {
             Ajouter à mes contacts
           </a>
 
-          <a href="tel:+22890112233">
+          <a href="tel:+2290167345084">
             <Phone size={18} />
             Appeler
           </a>
@@ -117,7 +117,7 @@ export default function DigitalCard() {
           </a>
 
           <a
-            href="https://wa.me/22890112233"
+            href="https://wa.me/2290167345084"
             target="_blank"
             rel="noopener noreferrer"
           >
