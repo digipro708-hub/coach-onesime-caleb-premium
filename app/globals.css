@@ -2914,3 +2914,18 @@ img{
   }
 
 }
+/* ===== CORRECTION NAVBAR MOBILE : ESPACIO DE LENGUA ===== */
+@media (max-width: 900px) {
+
+  .navbar-logo{
+    flex: 1;
+    min-width: 0;
+    max-width: none;
+    overflow: visible;
+    white-space: nowrap;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+}
