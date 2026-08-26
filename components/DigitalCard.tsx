@@ -102,7 +102,7 @@ export default function DigitalCard() {
             Ajouter à mes contacts
           </a>
 
-          <a href="tel:+2290167345084">
+          <a href="tel:+2290144686974">
             <Phone size={18} />
             Appeler
           </a>
