@@ -1250,11 +1250,11 @@ html{
 }
 
 .hero-slogan{
-  color:#ECB34F;
-  font-size:22px;
-  font-weight:600;
-  margin-top:10px;
-  italic:italic;
+  color: #ECB34F;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 10px;
+  font-style: italic;   /* ✅ Correct */
 }
 
 @media (max-width:768px){
